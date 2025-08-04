@@ -1,0 +1,28 @@
+ body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.8;
+    }
+    .section {
+      padding: 60px 0;
+    }
+    .hero {
+      background: #B0D151;
+      padding: 80px 0;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    .btn-primary {
+      background-color: #101820;
+      border: none;
+    }
+    .btn-primary:hover {
+      background-color: #004999;
+    }
+    .testimonial {
+      background-color: #f9f9f9;
+      padding: 30px;
+      border-left: 4px solid #007bff;
+    }
