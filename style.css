@@ -6,7 +6,7 @@
       padding: 60px 0;
     }
     .hero {
-      background: #B0D151;
+      background: #ECF0F1;
       padding: 80px 0;
       text-align: center;
     }
@@ -26,3 +26,10 @@
       padding: 30px;
       border-left: 4px solid #007bff;
     }
+    .play-button {
+  font-size: 1.5rem;
+}
+.card-img-top {
+  object-fit: cover;
+}
+    
