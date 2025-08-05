@@ -1,23 +1,55 @@
- body {
+
+
+  /* responsive */
+   body {
       font-family: 'Segoe UI', sans-serif;
       line-height: 1.8;
+      overflow-x: hidden;
     }
+
     .section {
       padding: 60px 0;
     }
+    /* Navbar link hover */
+.navbar-nav .nav-link {
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff; /* Bootstrap primary blue or your custom color */
+  text-decoration: underline;
+}
+
+/* Join Now button hover */
+.btn-primary {
+  background-color: #101820;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #004999;
+  transform: scale(1.05);
+}
+
+
     .hero {
       background: #ECF0F1;
       padding: 80px 0;
       text-align: center;
     }
+
     .hero h1 {
-      font-size: 2.5rem;
+      font-size: clamp(1.5rem, 5vw, 2.5rem);
       font-weight: bold;
     }
+
     .btn-primary {
       background-color: #101820;
       border: none;
     }
+
     .btn-primary:hover {
       background-color: #004999;
     }
@@ -26,59 +58,281 @@
       padding: 30px;
       border-left: 4px solid #007bff;
     }
+
     .play-button {
-  font-size: 1.5rem;
-}
-.card-img-top {
-  object-fit: cover;
-}
-.green-checklist {
-  list-style: none;
-  padding-left: 0;
-}
-
-.green-checklist li {
-  position: relative;
-  padding-left: 30px;
-  margin-bottom: 15px;
-}
-
-.green-checklist li::before {
-  content: "✔";
-  position: absolute;
-  left: 0;
-  color: #28a745; /* Green color */
-  font-weight: bold;
-}
-
-/* Ensure equal height columns */
-.section .row {
-  display: flex;
-  align-items: stretch;
-}
-
-.section .col-md-6 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-/* ATTEND  */
-.attend-section strong {
-    color: #a9e34b;
-  }
-  .attend-section h2 {
-    font-size: 2rem;
-  }
-  @media (max-width: 768px) {
-    .attend-section .row {
-      flex-direction: column;
+      font-size: 1.5rem;
     }
-    .attend-section .col-md-6 {
-      width: 100%;
+
+    .card-img-top {
+      object-fit: cover;
     }
-  }
 
+    .green-checklist {
+      list-style: none;
+      padding-left: 0;
+    }
 
+    .green-checklist li {
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 15px;
+    }
 
+    .green-checklist li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #28a745;
+      font-weight: bold;
+    }
 
+    .host-img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #2b3847;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .line hr {
+      border: none;
+      height: 4px;
+      background-color: #000;
+      width: 90%;
+      margin: 0 auto;
+      border-radius: 4px;
+    }
+
+    .attend-section strong {
+      color: #a9e34b;
+    }
+
+    .attend-section h2 {
+      font-size: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .attend-section .row {
+        flex-direction: column;
+      }
+
+      .attend-section .col-md-6 {
+        width: 100%;
+      }
+
+      .play-button {
+        width: 40px;
+        height: 40px;
+        font-size: 1.25rem;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .section .row {
+        display: flex;
+        align-items: stretch;
+      }
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    h1,
+    h2,
+    h3 {
+      word-break: break-word;
+      max-width: 100%;
+    }
+
+    .card {
+      height: 100%;
+    }
     
+/* heelo  */
+  .custom-section {
+      background: radial-gradient(circle at center, #eefce3 0%, #f3f8ec 100%);
+      padding: 100px 0;
+    }
+
+    .card-container {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      margin: 0 auto;
+    }
+
+    .card-sales,
+    .card-amazon {
+      border-radius: 20px;
+      padding: 20px;
+      width: 230px;
+      height: 170px;
+      background-color: #fff;
+      position: absolute;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-sales {
+      top: 0;
+      left: 0;
+    }
+
+    .card-amazon {
+      top: 60px;
+      left: 40px;
+      z-index: 1;
+    }
+
+    .avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      border: 3px solid white;
+      position: absolute;
+    }
+
+    .avatar-1 { top: 10px; left: -20px; }
+    .avatar-2 { top: 10px; right: -20px; }
+    .avatar-3 { bottom: 0px; left: 20px; }
+    .avatar-4 { bottom: -10px; right: 20px; }
+
+    .btn-custom {
+      background-color: #000;
+      color: #fff;
+      border-radius: 50px;
+      padding: 12px 28px;
+      font-weight: 600;
+      transition: all 0.3s;
+    }
+
+    .btn-custom:hover {
+      background-color: #333;
+      color: #fff;
+    }
+
+    /* //beyoung */
+  .experience-section {
+      background: radial-gradient(circle at center, #eafce1 0%, #f8fbf5 100%);
+      padding: 100px 0;
+    }
+
+    .card-box {
+      position: relative;
+      width: 320px;
+      height: 280px;
+    }
+
+    .sales-card,
+    .product-card {
+      border-radius: 20px;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      position: absolute;
+      width: 260px;
+    }
+
+    .sales-card {
+      top: 0;
+      left: 0;
+      z-index: 2;
+      border: 2px solid #007bff20;
+    }
+
+    .product-card {
+      top: 100px;
+      left: 40px;
+      z-index: 1;
+    }
+
+    .avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      border: 3px solid white;
+      position: absolute;
+    }
+
+    .avatar-1 { top: 10px; left: -20px; }
+    .avatar-2 { top: 10px; right: -20px; }
+    .avatar-3 { bottom: -20px; left: 0; }
+
+    .bar {
+      width: 20px;
+      background-color: #b5dd62;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+
+    .btn-custom {
+      background-color: #000;
+      color: #fff;
+      border-radius: 50px;
+      padding: 12px 28px;
+      font-weight: 600;
+      transition: all 0.3s;
+    }
+
+    .btn-custom:hover {
+      background-color: #333;
+    }
+
+    .subtitle {
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      letter-spacing: 1px;
+      font-weight: 600;
+    }
+    /* Haye Matt */
+   .cards-wrapper {
+  width: 420px;
+  height: 480px;
+  position: relative;
+}
+
+/* Card Style */
+.card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  width: 300px;
+  height: 200px;
+}
+
+/* Card 1: Top Left */
+.card-sales {
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+/* Card 2: Bottom Right – Touching Card 1 */
+.card-amazon {
+  top: 200px;    /* Same as height of card-sales */
+  left: 200px;   /* Aligned to bottom-right corner */
+}
+
+/* Avatar – Left center of Card 1 */
+.avatar-left {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: absolute;
+  left: -30px;
+  top: 100px; /* Vertically centered inside 200px height */
+  transform: translateY(-50%);
+  border: 3px solid #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Centered circle inside Card 1 */
+.circle-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+}
