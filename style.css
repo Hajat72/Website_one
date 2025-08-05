@@ -32,4 +32,53 @@
 .card-img-top {
   object-fit: cover;
 }
+.green-checklist {
+  list-style: none;
+  padding-left: 0;
+}
+
+.green-checklist li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+}
+
+.green-checklist li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #28a745; /* Green color */
+  font-weight: bold;
+}
+
+/* Ensure equal height columns */
+.section .row {
+  display: flex;
+  align-items: stretch;
+}
+
+.section .col-md-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* ATTEND  */
+.attend-section strong {
+    color: #a9e34b;
+  }
+  .attend-section h2 {
+    font-size: 2rem;
+  }
+  @media (max-width: 768px) {
+    .attend-section .row {
+      flex-direction: column;
+    }
+    .attend-section .col-md-6 {
+      width: 100%;
+    }
+  }
+
+
+
+
     
