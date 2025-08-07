@@ -336,3 +336,17 @@
   align-items: center;
   height: 120px;
 }
+.grayscale {
+    filter: grayscale(100%);
+  }
+   .testimonial-card img {
+    height: 220px;
+    object-fit: cover;
+  }
+  .testimonial-card .card-body {
+    padding: 1rem 1.25rem;
+  }
+  .testimonial-card .card-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
