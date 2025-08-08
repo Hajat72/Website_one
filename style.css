@@ -1,352 +1,437 @@
-
-
-  /* responsive */
-   body {
-      font-family: 'Segoe UI', sans-serif;
-      line-height: 1.8;
-      overflow-x: hidden;
-    }
-
-    .section {
-      padding: 60px 0;
-    }
-    /* Navbar link hover */
-.navbar-nav .nav-link {
-  color: #000;
-  transition: color 0.3s ease;
+/* responsive */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.8;
+  overflow-x: hidden;
 }
 
-.navbar-nav .nav-link:hover {
-  color: #007bff; /* Bootstrap primary blue or your custom color */
-  text-decoration: underline;
+.section {
+  padding: 60px 0;
 }
 
-/* Join Now button hover */
-.btn-primary {
-  background-color: #101820;
+/* Navbar CSS */
+.custom-navbar {
+  background-color: #0B1F3A;
+  /* Deep Navy */
+}
+
+.custom-navbar .nav-link:hover {
+  color: #2ECC71 !important;
+  /* Green hover */
+  transition: 0.3s;
+}
+
+.btn-success {
+  background-color: #2ECC71;
   border: none;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-success:hover {
+  background-color: #27AE60;
+}
+
+/* End  */
+
+/* hey maat  */
+.btn:hover {
+  background: #27AE60 !important;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* end hey maat  */
+/* btns css  */
+.btn-primary {
+  background-color: #27AE60;
+  /* Main brand color */
+  border-color: #00B894;
+  color: #fff;
+  transition: all 0.3s ease;
 }
 
 .btn-primary:hover {
-  background-color: #004999;
+  background-color: #27AE60;
+  /* Slightly darker on hover */
+  border-color: #009f7a;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 184, 148, 0.4);
+}
+
+/* end btn css  */
+
+/* What You Get  */
+.membership-section {
+  background: linear-gradient(180deg, #f8f9fa, #ffffff);
+}
+
+.feature-card {
+  background: rgba(25, 135, 84, 0.05);
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  background: rgba(25, 135, 84, 0.1);
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.icon-circle {
+  background-color: #759e8b;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover .icon-circle {
+  transform: rotate(15deg) scale(1.1);
+}
+
+/* end  */
+/* Agenda css  */
+/* Section background */
+.section.bg-white {
+  background: linear-gradient(135deg, #ffffff, #f8fafc);
+}
+
+/* Card styling */
+.section .border {
+  border: none !important;
+  background: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section .border:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Headings */
+.section h2 {
+  color: #1a1a1a;
+}
+
+/* Icon color */
+.section i {
+  color: #0d6efd !important;
+  /* Matches primary theme */
+}
+
+/* List styling */
+.section ul li {
+  font-size: 15px;
+  color: #444;
+}
+
+/* Button */
+.section .btn-primary {
+  background: #0d6efd;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 25px;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.section .btn-primary:hover {
+  background: #0b5ed7;
+  transform: translateY(-3px);
+}
+
+/* end  */
+
+/* who is mastermind  */
+/* Section background */
+.section {
+  background: linear-gradient(135deg, #ffffff, #f8fafc);
+}
+
+/* Heading */
+.section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+}
+
+/* Paragraph text */
+.section p {
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Green checklist styling */
+.green-checklist {
+  list-style: none;
+  padding: 0;
+}
+
+.green-checklist li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  font-size: 15px;
+  color: #333;
+}
+
+.green-checklist li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #28a745;
+  font-weight: bold;
+}
+
+/* Image styling */
+.section img {
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.section img:hover {
+  transform: scale(1.03);
+}
+
+/* end  */
+/* Vision  */
+/* Section background */
+.section {
+  background: linear-gradient(135deg, #ffffff, #f9fafb);
+}
+
+/* Heading */
+.section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+}
+
+/* Paragraphs */
+.section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+/* Image styling */
+.section img {
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.section img:hover {
+  transform: scale(1.03);
+}
+
+/* end  */
+/* investment  */
+/* Section background */
+.section {
+  background: linear-gradient(135deg, #ffffff, #f8fafc);
+}
+
+/* Heading styling */
+.section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
+/* Paragraph styling */
+.section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+/* Image styling */
+.section img {
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.section img:hover {
+  transform: scale(1.03);
+}
+
+/* Button styling */
+.section .btn-primary {
+  background-color: #0077ff;
+  border: none;
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.section .btn-primary:hover {
+  background-color: #005fcc;
+  transform: translateY(-2px);
+}
+
+/* end  */
+/* attend  */
+.attend-section {
+  background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+  color: #fff;
+}
+
+.attend-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f5c542;
+  /* Golden accent */
+}
+
+.attend-section p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #ddd;
+}
+
+.attend-section strong {
+  color: #fff;
+}
+
+.attend-section img {
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.attend-section img:hover {
   transform: scale(1.05);
 }
 
+/* end  */
+/* term  */
+.section.terms-section {
+  background: linear-gradient(135deg, #ffffff, #f8f8f8);
+  padding: 60px 0;
+}
 
-    .hero {
-      background: #ECF0F1;
-      padding: 80px 0;
-      text-align: center;
-    }
+.terms-section h2 {
+  color: #f5c542;
+  /* Golden accent */
+  font-weight: 700;
+  margin-bottom: 20px;
+}
 
-    .hero h1 {
-      font-size: clamp(1.5rem, 5vw, 2.5rem);
-      font-weight: bold;
-    }
+.terms-section p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #555;
+}
 
-    .btn-primary {
-      background-color: #101820;
-      border: none;
-    }
+.green-checklist {
+  list-style: none;
+  padding-left: 0;
+}
 
-    .btn-primary:hover {
-      background-color: #004999;
-    }
-    .testimonial {
-      background-color: #f9f9f9;
-      padding: 30px;
-      border-left: 4px solid #007bff;
-    }
-
-    .play-button {
-      font-size: 1.5rem;
-    }
-
-    .card-img-top {
-      object-fit: cover;
-    }
-
-    .green-checklist {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    .green-checklist li {
-      position: relative;
-      padding-left: 30px;
-      margin-bottom: 15px;
-    }
-
-    .green-checklist li::before {
-      content: "✔";
-      position: absolute;
-      left: 0;
-      color: #28a745;
-      font-weight: bold;
-    }
-
-    .host-img {
-      width: 250px;
-      height: 250px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 3px solid #2b3847;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .line hr {
-      border: none;
-      height: 4px;
-      background-color: #000;
-      width: 90%;
-      margin: 0 auto;
-      border-radius: 4px;
-    }
-
-    .attend-section strong {
-      color: #a9e34b;
-    }
-
-    .attend-section h2 {
-      font-size: 2rem;
-    }
-
-    @media (max-width: 768px) {
-      .attend-section .row {
-        flex-direction: column;
-      }
-
-      .attend-section .col-md-6 {
-        width: 100%;
-      }
-
-      .play-button {
-        width: 40px;
-        height: 40px;
-        font-size: 1.25rem;
-      }
-    }
-
-    @media (min-width: 992px) {
-      .section .row {
-        display: flex;
-        align-items: stretch;
-      }
-    }
-
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-
-    h1,
-    h2,
-    h3 {
-      word-break: break-word;
-      max-width: 100%;
-    }
-
-    .card {
-      height: 100%;
-    }
-    
-/* heelo  */
-  .custom-section {
-      background: radial-gradient(circle at center, #eefce3 0%, #f3f8ec 100%);
-      padding: 100px 0;
-    }
-
-    .card-container {
-      position: relative;
-      width: 300px;
-      height: 300px;
-      margin: 0 auto;
-    }
-
-    .card-sales,
-    .card-amazon {
-      border-radius: 20px;
-      padding: 20px;
-      width: 230px;
-      height: 170px;
-      background-color: #fff;
-      position: absolute;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    }
-
-    .card-sales {
-      top: 0;
-      left: 0;
-    }
-
-    .card-amazon {
-      top: 60px;
-      left: 40px;
-      z-index: 1;
-    }
-
-    .avatar {
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      border: 3px solid white;
-      position: absolute;
-    }
-
-    .avatar-1 { top: 10px; left: -20px; }
-    .avatar-2 { top: 10px; right: -20px; }
-    .avatar-3 { bottom: 0px; left: 20px; }
-    .avatar-4 { bottom: -10px; right: 20px; }
-
-    .btn-custom {
-      background-color: #000;
-      color: #fff;
-      border-radius: 50px;
-      padding: 12px 28px;
-      font-weight: 600;
-      transition: all 0.3s;
-    }
-
-    .btn-custom:hover {
-      background-color: #333;
-      color: #fff;
-    }
-
-    /* //beyoung */
-  .experience-section {
-      background: radial-gradient(circle at center, #eafce1 0%, #f8fbf5 100%);
-      padding: 100px 0;
-    }
-
-    .card-box {
-      position: relative;
-      width: 320px;
-      height: 280px;
-    }
-
-    .sales-card,
-    .product-card {
-      border-radius: 20px;
-      padding: 20px;
-      background-color: white;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-      position: absolute;
-      width: 260px;
-    }
-
-    .sales-card {
-      top: 0;
-      left: 0;
-      z-index: 2;
-      border: 2px solid #007bff20;
-    }
-
-    .product-card {
-      top: 100px;
-      left: 40px;
-      z-index: 1;
-    }
-
-    .avatar {
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      border: 3px solid white;
-      position: absolute;
-    }
-
-    .avatar-1 { top: 10px; left: -20px; }
-    .avatar-2 { top: 10px; right: -20px; }
-    .avatar-3 { bottom: -20px; left: 0; }
-
-    .bar {
-      width: 20px;
-      background-color: #b5dd62;
-      border-radius: 5px;
-      margin-right: 10px;
-    }
-
-    .btn-custom {
-      background-color: #000;
-      color: #fff;
-      border-radius: 50px;
-      padding: 12px 28px;
-      font-weight: 600;
-      transition: all 0.3s;
-    }
-
-    .btn-custom:hover {
-      background-color: #333;
-    }
-
-    .subtitle {
-      text-transform: uppercase;
-      font-size: 0.75rem;
-      letter-spacing: 1px;
-      font-weight: 600;
-    }
-    /* Haye Matt */
-   .cards-wrapper {
-  width: 420px;
-  height: 480px;
+.green-checklist li {
   position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  color: #444;
+  font-size: 1.05rem;
 }
 
-/* Card Style */
-.card {
-  background: #fff;
-  border-radius: 20px;
-  padding: 25px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-  width: 300px;
-  height: 200px;
-}
-
-/* Card 1: Top Left */
-.card-sales {
-  top: 0;
-  left: 0;
-  z-index: 2;
-}
-
-/* Card 2: Bottom Right – Touching Card 1 */
-.card-amazon {
-  top: 200px;    /* Same as height of card-sales */
-  left: 200px;   /* Aligned to bottom-right corner */
-}
-
-/* Avatar – Left center of Card 1 */
-.avatar-left {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
+.green-checklist li::before {
+  content: '✔';
   position: absolute;
-  left: -30px;
-  top: 100px; /* Vertically centered inside 200px height */
-  transform: translateY(-50%);
-  border: 3px solid #fff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  left: 0;
+  top: 0;
+  color: #28a745;
+  font-weight: bold;
 }
 
-/* Centered circle inside Card 1 */
-.circle-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 120px;
+/* end  */
+/* Apply  */
+.green-checklist {
+  list-style: none;
+  padding-left: 0;
 }
-.grayscale {
-    filter: grayscale(100%);
-  }
-   .testimonial-card img {
-    height: 220px;
-    object-fit: cover;
-  }
-  .testimonial-card .card-body {
-    padding: 1rem 1.25rem;
-  }
-  .testimonial-card .card-text {
-    font-size: 0.9rem;
-    line-height: 1.5;
-  }
+
+.green-checklist li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+}
+
+.green-checklist li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: #28a745;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #f5c542;
+  border: none;
+  color: #000;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #ffdb6e;
+  box-shadow: 0px 4px 10px rgba(245, 197, 66, 0.5);
+}
+
+/* end  */
+/* Host  */
+.host-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #f5c542;
+  /* Golden ring */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.host-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(245, 197, 66, 0.4);
+}
+
+/* end  */
+/* footer  */
+.footer {
+  background-color: #111;
+  /* Deep dark */
+  color: #fff;
+  border-top: 2px solid #f5c542;
+  /* Gold accent */
+}
+
+.footer h3 {
+  font-weight: 700;
+  letter-spacing: 2px;
+
+}
+
+.footer small {
+  color: #ccc;
+}
+
+.footer small:hover {
+  color: #f5c542;
+  transition: color 0.3s ease;
+}
+
+/* end  */
