@@ -58,16 +58,17 @@
     </nav>
   </header>
   <!-- HERO SECTION -->
-<section class="hero py-5 text-white" style="background-color: #0B1F3A;" id="home">
+  <section class="hero py-5 text-white" style="background-color: #0B1F3A;" id="home">
     <div class="container text-center">
       <!-- Heading -->
       <h1 class="fw-bold mb-4">
-    "Picture Explosive Growth: Build Your $10M <br> Ecommerce Future with GrowthSphere"
+        "Picture Explosive Growth: Build Your $10M <br> Ecommerce Future with GrowthSphere"
       </h1>
 
       <!-- Responsive Image -->
       <div class="mb-4" style="max-width: 800px; margin: auto;">
-        <img src="images/frame/hero.png" alt="Hero Image" class="img-fluid" style="border-radius: 12px; box-shadow: 0px 4px 15px rgba(0,0,0,0.3);">
+        <img src="images/frame/hero.png" alt="Hero Image" class="img-fluid"
+          style="border-radius: 12px; box-shadow: 0px 4px 15px rgba(0,0,0,0.3);">
       </div>
 
       <!-- CTA Button -->
@@ -75,7 +76,7 @@
         Get Started →
       </a>
     </div>
-</section>
+  </section>
 
   <!-- From Idea SECTION -->
   <section class="section py-5" style="background-color: #F8F9FA;">
@@ -356,38 +357,42 @@
 
         <!-- Left Cards -->
         <div class="col-md-6 d-flex justify-content-center mb-5 mb-md-0">
-          <div class="card-box position-relative">
+          <div class="card-box position-relative p-4"
+            style="background: #fff; border-radius: 15px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); width: 100%; max-width: 450px;">
 
-            <!-- Avatar - move UP -->
-            <img src="https://randomuser.me/api/portraits/men/11.jpg" class="avatar avatar-top" alt="">
+            <!-- Avatar - Top Left -->
+            <img src="images/cards/card1.png" class="avatar avatar-top rounded-circle" alt="Team Member 1"
+              style="width: 60px; height: 60px; border: 3px solid #28a745; position: absolute; top: -33px; left: 20px; object-fit: cover; object-position: center;">
 
             <!-- Card 1: Sales Earning -->
-            <div class="sales-card shadow-sm p-3 bg-white rounded">
-              <h6 class="fw-bold">Sales Earning</h6>
-              <p class="text-success fw-bold mb-2">↑ 48%</p>
-              <div class="d-flex align-items-end" style="height: 80px;">
-                <div class="bar bg-primary rounded" style="height: 30px; width: 10px; margin-right: 5px;"></div>
-                <div class="bar bg-primary rounded" style="height: 50px; width: 10px; margin-right: 5px;"></div>
-                <div class="bar bg-primary rounded" style="height: 70px; width: 10px; margin-right: 5px;"></div>
-                <div class="bar bg-primary rounded" style="height: 40px; width: 10px;"></div>
+            <div class="sales-card p-3 bg-white rounded shadow-sm mt-4">
+              <h6 class="fw-bold mb-2" style="color: #0B1F3A; font-size: 1.1rem;">Sales Earning</h6>
+              <p class="text-success fw-bold mb-2" style="font-size: 1.2rem;">↑ 48%</p>
+              <div class="d-flex align-items-end" style="height: 80px; gap: 5px;">
+                <div class="bar bg-success rounded" style="height: 30px; width: 15px; transition: height 0.3s;"></div>
+                <div class="bar bg-success rounded" style="height: 50px; width: 15px; transition: height 0.3s;"></div>
+                <div class="bar bg-success rounded" style="height: 70px; width: 15px; transition: height 0.3s;"></div>
+                <div class="bar bg-success rounded" style="height: 40px; width: 15px; transition: height 0.3s;"></div>
               </div>
             </div>
 
             <!-- Card 2: Product Sales -->
-            <div class="product-card shadow-sm p-3 bg-white rounded mt-3">
-              <h6 class="fw-bold">Product Sales</h6>
-              <p class="text-success fw-bold mb-2">↑ 63%</p>
+            <div class="product-card p-3 bg-white rounded shadow-sm mt-3">
+              <h6 class="fw-bold mb-2" style="color: #0B1F3A; font-size: 1.1rem;">Product Sales</h6>
+              <p class="text-success fw-bold mb-2" style="font-size: 1.2rem;">↑ 63%</p>
               <div class="mt-2">
-                <svg width="100%" height="60">
-                  <polyline fill="none" stroke="#82c91e" stroke-width="3"
+                <svg width="100%" height="60" style="overflow: visible;">
+                  <polyline fill="none" stroke="#28a745" stroke-width="3" stroke-linecap="round"
                     points="0,50 20,40 40,30 60,35 80,25 100,20 120,15" />
                 </svg>
               </div>
             </div>
 
-            <!-- Additional floating avatars -->
-            <img src="https://randomuser.me/api/portraits/men/33.jpg" class="avatar avatar-2" alt="">
-            <img src="https://randomuser.me/api/portraits/women/55.jpg" class="avatar avatar-3" alt="">
+            <!-- Additional Floating Avatars -->
+            <img src="images/cards/card2.png" class="avatar avatar-2 rounded-circle" alt="Team Member 2"
+              style="width: 50px; height: 50px; border: 3px solid #28a745; position: absolute; right: 10px; bottom: 10px; object-fit: cover; object-position: center;">
+            <img src="images/cards/card3.png" class="avatar avatar-3 rounded-circle" alt="Team Member 3"
+              style="width: 50px; height: 50px; border: 3px solid #28a745; position: absolute; right: 60px; bottom: 60px; object-fit: cover; object-position: center;">
           </div>
         </div>
 
@@ -772,74 +777,88 @@
     </div>
   </section>
 
-<!-- Contact Section -->
-<section class="section py-5" id="contact" style="background: linear-gradient(135deg, #e0e8f0, #d4e8d4);">
-  <div class="container">
-    <div class="row align-items-center">
-      <!-- Left Side: Contact Form -->
-      <div class="col-lg-6 mb-4 mb-lg-0">
-        <h2 class="fw-bold mb-4" style="color: #0B1F3A;">Connect with GrowthSphere</h2>
-        <p style="color: #333; font-size: 1.1rem;">Ready to scale your 7-figure ecommerce business to $10M+? Fill out the form below to join The Tycoon Group or get answers to your questions.</p>
-        <form action="submit-contact-form.php" method="POST" class="needs-validation" novalidate>
-          <div class="mb-3 position-relative">
-            <label for="name" class="form-label fw-semibold" style="color: #0B1F3A;">Full Name</label>
-            <div class="input-group">
-              <span class="input-group-text bg-white border-end-0"><i class="bi bi-person-fill"></i></span>
-              <input type="text" class="form-control form-control-lg shadow-sm border-start-0" id="name" name="name" placeholder="Your Full Name" required>
-              <div class="invalid-feedback">Please enter your name.</div>
+  <!-- Contact Section -->
+  <section class="section py-5" id="contact" style="background: linear-gradient(135deg, #e0e8f0, #d4e8d4);">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left Side: Contact Form -->
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h2 class="fw-bold mb-4" style="color: #0B1F3A;">Connect with GrowthSphere</h2>
+          <p style="color: #333; font-size: 1.1rem;">Ready to scale your 7-figure ecommerce business to $10M+? Fill out
+            the form below to join The Tycoon Group or get answers to your questions.</p>
+          <form action="#" method="POST" class="needs-validation" novalidate>
+            <div class="mb-3 position-relative rounded-2">
+              <label for="name" class="form-label fw-semibold" style="color: #0B1F3A;">Full Name</label>
+              <div class="input-group">
+                <span class="input-group-text bg-white border-end-0 rounded-start-5"><i
+                    class="bi bi-person-fill"></i></span>
+                <input type="text" class="form-control form-control-lg shadow-sm border-start-0 rounded-end-5" id="name"
+                  name="name" placeholder="Your Full Name" required>
+                <div class="invalid-feedback">Please enter your name.</div>
+              </div>
             </div>
-          </div>
-          <div class="mb-3 position-relative">
-            <label for="email" class="form-label fw-semibold" style="color: #0B1F3A;">Email Address</label>
-            <div class="input-group">
-              <span class="input-group-text bg-white border-end-0"><i class="bi bi-envelope-fill"></i></span>
-              <input type="email" class="form-control form-control-lg shadow-sm border-start-0" id="email" name="email" placeholder="Your Email" required>
-              <div class="invalid-feedback">Please enter a valid email address.</div>
+            <div class="mb-3 position-relative rounded-2">
+              <label for="email" class="form-label fw-semibold" style="color: #0B1F3A;">Email Address</label>
+              <div class="input-group">
+                <span class="input-group-text bg-white border-end-0 rounded-start-5"><i
+                    class="bi bi-envelope-fill"></i></span>
+                <input type="email" class="form-control form-control-lg shadow-sm border-start-0 rounded-end-5"
+                  id="email" name="email" placeholder="Your Email" required>
+                <div class="invalid-feedback">Please enter a valid email address.</div>
+              </div>
             </div>
-          </div>
-          <div class="mb-3 position-relative">
-            <label for="business" class="form-label fw-semibold" style="color: #0B1F3A;">Business Name</label>
-            <div class="input-group">
-              <span class="input-group-text bg-white border-end-0"><i class="bi bi-briefcase-fill"></i></span>
-              <input type="text" class="form-control form-control-lg shadow-sm border-start-0" id="business" name="business" placeholder="Your Ecommerce Business" required>
-              <div class="invalid-feedback">Please enter your business name.</div>
+            <div class="mb-3 position-relative rounded-2">
+              <label for="business" class="form-label fw-semibold" style="color: #0B1F3A;">Business Name</label>
+              <div class="input-group">
+                <span class="input-group-text bg-white border-end-0 rounded-start-5"><i
+                    class="bi bi-briefcase-fill"></i></span>
+                <input type="text" class="form-control form-control-lg shadow-sm border-start-0 rounded-end-5"
+                  id="business" name="business" placeholder="Your Ecommerce Business" required>
+                <div class="invalid-feedback">Please enter your business name.</div>
+              </div>
             </div>
+            <div class="mb-3 position-relative rounded-2">
+              <label for="message" class="form-label fw-semibold" style="color: #0B1F3A;">Message</label>
+              <textarea class="form-control form-control-lg shadow-sm rounded-2" id="message" name="message" rows="5"
+                placeholder="Tell us about your goals or questions" required></textarea>
+              <div class="invalid-feedback">Please enter your message.</div>
+            </div>
+            <button type="submit" class="btn btn-success btn-lg px-5 py-2 fw-semibold"
+              style="border-radius: 50px; transition: background-color 0.3s, transform 0.2s;"
+              data-bs-loading-text="Sending...">Send Message</button>
+          </form>
+        </div>
+        <!-- Right Side: Contact Details and Image -->
+        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
+          <img src="images/logo/logo.png" alt="Contact GrowthSphere" class="img-fluid rounded shadow-lg mb-4"
+            style="max-width: 50%; border-radius: 15px;">
+          <div class="contact-details text-center">
+            <h5 class="fw-bold mb-3" style="color: #0B1F3A;">Contact Information</h5>
+            <p style="color: #333; font-size: 1rem;">
+              <i class="bi bi-envelope-fill me-2"></i><a href="mailto:support@growthsphere.com"
+                class="text-decoration-none" style="color: #28a745;">support@growthsphere.com</a><br>
+              <i class="bi bi-telephone-fill me-2"></i><a href="tel:+1234567890" class="text-decoration-none"
+                style="color: #28a745;">+1 (234) 567-890</a><br>
+              <i class="bi bi-geo-alt-fill me-2"></i>123 Ecommerce Ave, Austin, TX 78701
+            </p>
+            <div class="social-icons mt-3">
+              <a href="https://twitter.com/growthsphere" class="text-decoration-none me-3" style="color: #0B1F3A;">
+                <i class="bi bi-twitter fs-5"></i>
+              </a>
+              <a href="https://linkedin.com/company/growthsphere" class="text-decoration-none me-3"
+                style="color: #0B1F3A;">
+                <i class="bi bi-linkedin fs-5"></i>
+              </a>
+              <a href="https://facebook.com/growthsphere" class="text-decoration-none" style="color: #0B1F3A;">
+                <i class="bi bi-facebook fs-5"></i>
+              </a>
+            </div>
+            <p class="mt-3" style="color: #333;">Join our elite community of ecommerce entrepreneurs today!</p>
           </div>
-          <div class="mb-3 position-relative">
-            <label for="message" class="form-label fw-semibold" style="color: #0B1F3A;">Message</label>
-            <textarea class="form-control form-control-lg shadow-sm" id="message" name="message" rows="5" placeholder="Tell us about your goals or questions" required></textarea>
-            <div class="invalid-feedback">Please enter your message.</div>
-          </div>
-          <button type="submit" class="btn btn-success btn-lg px-5 py-2 fw-semibold" style="border-radius: 50px; transition: background-color 0.3s, transform 0.2s;" data-bs-loading-text="Sending...">Send Message</button>
-        </form>
-      </div>
-      <!-- Right Side: Contact Details and Image -->
-      <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
-        <img src="images/logo/logo.png" alt="Contact GrowthSphere" class="img-fluid rounded shadow-lg mb-4" style="max-width: 50%; border-radius: 15px;">
-        <div class="contact-details text-center">
-          <h5 class="fw-bold mb-3" style="color: #0B1F3A;">Contact Information</h5>
-          <p style="color: #333; font-size: 1rem;">
-            <i class="bi bi-envelope-fill me-2"></i><a href="mailto:support@growthsphere.com" class="text-decoration-none" style="color: #28a745;">support@growthsphere.com</a><br>
-            <i class="bi bi-telephone-fill me-2"></i><a href="tel:+1234567890" class="text-decoration-none" style="color: #28a745;">+1 (234) 567-890</a><br>
-            <i class="bi bi-geo-alt-fill me-2"></i>123 Ecommerce Ave, Austin, TX 78701
-          </p>
-          <div class="social-icons mt-3">
-            <a href="https://twitter.com/growthsphere" class="text-decoration-none me-3" style="color: #0B1F3A;">
-              <i class="bi bi-twitter fs-5"></i>
-            </a>
-            <a href="https://linkedin.com/company/growthsphere" class="text-decoration-none me-3" style="color: #0B1F3A;">
-              <i class="bi bi-linkedin fs-5"></i>
-            </a>
-            <a href="https://facebook.com/growthsphere" class="text-decoration-none" style="color: #0B1F3A;">
-              <i class="bi bi-facebook fs-5"></i>
-            </a>
-          </div>
-          <p class="mt-3" style="color: #333;">Join our elite community of ecommerce entrepreneurs today!</p>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- HOST SECTION  -->
   <section class="section py-5" style="background: linear-gradient(180deg, #f9f9f9, #ffffff);">
