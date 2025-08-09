@@ -114,37 +114,37 @@
         <div class="col-md-6 d-flex justify-content-center mb-4 mb-md-0">
           <div class="position-relative">
 
-            <!-- Card 1 -->
+            <!-- Card 1  -->
             <div class="card p-4 mb-3 shadow-lg border-0"
-              style="width: 280px; height: 220px; position: relative; z-index: 2; background: white; border-radius: 15px;">
-              <h6 class="mb-3 text-center text-dark fw-bold">Total Sales</h6>
+              style="width: 280px; height: 220px; position: relative; z-index: 5; background: white; border-radius: 15px;">
+              <h6 class=" text-start text-dark fw-bold">Total Sales</h6>
               <div class="d-flex justify-content-center align-items-center" style="height: 100%;">
                 <svg width="100" height="100">
                   <circle cx="50" cy="50" r="40" stroke="#eee" stroke-width="10" fill="none" />
                   <circle cx="50" cy="50" r="40" stroke="#82c91e" stroke-width="10" fill="none" stroke-dasharray="251.2"
-                    stroke-dashoffset="125.6" transform="rotate(-90 50 50)" />
+                    stroke-dashoffset="125.6" transform="rotate(90 50 50)" />
                 </svg>
               </div>
             </div>
 
-            <!-- Card 2 -->
-            <div class="card p-3 shadow border-0"
-              style="width: 240px; height: 180px; position: absolute; top: 140px; left: 100px; z-index: 1; background: #f8f9fa; border-radius: 15px;">
-              <h6 class="d-flex align-items-center mb-3 text-dark fw-semibold">
+            <!-- Card 2  -->
+            <div class="card mx-5 shadow border-0"
+              style="width: 280px; height: 200px; position: absolute; top: 140px; left: 100px; z-index: 10; background: #f8f9fa; border-radius: 15px;">
+              <h6 class="d-flex align-items-center py-4 px-3 mb-3 text-dark fw-bold">
                 <img src="https://img.icons8.com/ios-filled/20/0B1F3A/camera.png" class="me-2" />
                 Selling on Amazon
               </h6>
               <svg width="100%" height="60">
-                <polyline fill="none" stroke="#82c91e" stroke-width="3"
+                <polyline fill="none" stroke="#82c91e" stroke-width="5"
                   points="0,50 20,40 40,30 60,35 80,25 100,20 120,15" />
               </svg>
             </div>
 
             <!-- Avatars -->
-            <div class="position-absolute" style="top: 10px; left: -50px;">
+            <div class="position-absolute" style="bottom: 120px; left: -25px;">
               <img src="https://randomuser.me/api/portraits/men/11.jpg" class="rounded-circle mb-1 shadow" width="40">
-              <img src="https://randomuser.me/api/portraits/men/65.jpg" class="rounded-circle mb-1 shadow" width="40">
-              <img src="https://randomuser.me/api/portraits/women/44.jpg" class="rounded-circle shadow" width="40">
+              <!-- <img src="https://randomuser.me/api/portraits/men/65.jpg" class="rounded-circle mb-1 shadow" width="40">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" class="rounded-circle shadow" width="40"> -->
             </div>
 
           </div>
@@ -163,7 +163,7 @@
             businesses with billions in sales. Our company produced $100 million in sales.</p>
           <p class="mb-4">It all started by joining a private mastermind with other motivated entrepreneurs.</p>
           <a href="#" class="btn btn-lg px-4"
-            style="background: #28a745; border: none; color: #0B1F3A; font-weight: bold; border-radius: 8px; transition: 0.3s;">
+            style="background: #28a745; border: none; color: #ffff; font-weight: bold; border-radius: 8px; transition: 0.3s;">
             Get Started →
           </a>
         </div>
@@ -278,76 +278,94 @@
   <!-- Here’s what a few of the mastermind members had to say -->
   <section class="py-5 text-center" style="background-color: #fdf6ec;">
     <div class="container">
-      <h2 class="fw-bold mb-4">
+      <h2 class="fw-bold mb-5">
         Here’s What A Few Of The Mastermind <br class="d-none d-md-block" />
         Members Had To Say
       </h2>
 
-      <div class="row row-cols-1 row-cols-md-3 g-3 justify-content-center">
-        <!-- Card 1 -->
+      <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+
+        <!-- Testimonial Card -->
         <div class="col">
-          <div class="testimonial-card border-0 shadow-sm bg-white rounded">
-            <div class="position-relative">
-              <img src="images/image1.png" class="card-img-top grayscale" alt="Testimonial 1" />
-              <button class="btn btn-light rounded-circle position-absolute bottom-0 start-0 m-2 shadow">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" viewBox="0 0 16 16">
-                  <path d="M6 4.5v7l6-3.5-6-3.5z" />
-                </svg>
-              </button>
+          <div class="testimonial-card border-0 shadow-sm bg-white rounded overflow-hidden h-100"
+            style="transition: transform 0.3s, box-shadow 0.3s;">
+            <div class="position-relative overflow-hidden" style="border-bottom: 4px solid #28a745;">
+              <img src="images/image1.png" class="card-img-top grayscale" alt="Testimonial 1"
+                style="transition: transform 0.4s; object-fit: cover; height: 240px;">
+              <div class="position-absolute bottom-0 start-0 w-100 p-3"
+                style="background: linear-gradient(to top, rgba(0,0,0,0.5), transparent);">
+                <button class="btn btn-light rounded-circle shadow">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" viewBox="0 0 16 16">
+                    <path d="M6 4.5v7l6-3.5-6-3.5z" />
+                  </svg>
+                </button>
+              </div>
             </div>
             <div class="card-body text-start">
-              <h6 class="fw-bold mb-2">“Best Experience I’ve Had”</h6>
-              <p class="card-text text-muted mb-0">
+              <h6 class="fw-bold mb-2 text-dark">“Best Experience I’ve Had”</h6>
+              <p class="card-text text-muted mb-0" style="line-height: 1.6;">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida ac nulla fermentum odio in nunc,
-                aenean. –– Your name
+                aenean ––Your Name</span>
               </p>
             </div>
           </div>
         </div>
 
-        <!-- Card 2 -->
+        <!-- Repeat for Card 2 -->
         <div class="col">
-          <div class="testimonial-card shadow-sm bg-white rounded">
-            <div class="position-relative">
-              <img src="images/image2.png" class="card-img-top grayscale" alt="Testimonial 2" />
-              <button class="btn btn-light rounded-circle position-absolute bottom-0 start-0 m-2 shadow">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" viewBox="0 0 16 16">
-                  <path d="M6 4.5v7l6-3.5-6-3.5z" />
-                </svg>
-              </button>
+          <div class="testimonial-card border-0 shadow-sm bg-white rounded overflow-hidden h-100"
+            style="transition: transform 0.3s, box-shadow 0.3s;">
+            <div class="position-relative overflow-hidden" style="border-bottom: 4px solid #28a745;">
+              <img src="images/image2.png" class="card-img-top grayscale" alt="Testimonial 2"
+                style="transition: transform 0.4s; object-fit: cover; height: 240px;">
+              <div class="position-absolute bottom-0 start-0 w-100 p-3"
+                style="background: linear-gradient(to top, rgba(0,0,0,0.5), transparent);">
+                <button class="btn btn-light rounded-circle shadow">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" viewBox="0 0 16 16">
+                    <path d="M6 4.5v7l6-3.5-6-3.5z" />
+                  </svg>
+                </button>
+              </div>
             </div>
             <div class="card-body text-start">
-              <h6 class="fw-bold mb-2">“Best Experience I’ve Had”</h6>
-              <p class="card-text text-muted mb-0">
+              <h6 class="fw-bold mb-2 text-dark">“Great Community and Support”</h6>
+              <p class="card-text text-muted mb-0" style="line-height: 1.6;">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida ac nulla fermentum odio in nunc,
-                aenean. –– Your name
+                aenean ––Your Name</span>
               </p>
             </div>
           </div>
         </div>
 
-        <!-- Card 3 -->
+        <!-- Repeat for Card 3 -->
         <div class="col">
-          <div class="testimonial-card shadow-sm bg-white rounded">
-            <div class="position-relative">
-              <img src="images/image3.png" class="card-img-top grayscale" alt="Testimonial 3" />
-              <button class="btn btn-light rounded-circle position-absolute bottom-0 start-0 m-2 shadow">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" viewBox="0 0 16 16">
-                  <path d="M6 4.5v7l6-3.5-6-3.5z" />
-                </svg>
-              </button>
+          <div class="testimonial-card border-0 shadow-sm bg-white rounded overflow-hidden h-100"
+            style="transition: transform 0.3s, box-shadow 0.3s;">
+            <div class="position-relative overflow-hidden" style="border-bottom: 4px solid #28a745;">
+              <img src="images/image3.png" class="card-img-top grayscale" alt="Testimonial 3"
+                style="transition: transform 0.4s; object-fit: cover; height: 240px;">
+              <div class="position-absolute bottom-0 start-0 w-100 p-3"
+                style="background: linear-gradient(to top, rgba(0,0,0,0.5), transparent);">
+                <button class="btn btn-light rounded-circle shadow">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" viewBox="0 0 16 16">
+                    <path d="M6 4.5v7l6-3.5-6-3.5z" />
+                  </svg>
+                </button>
+              </div>
             </div>
             <div class="card-body text-start">
-              <h6 class="fw-bold mb-2">“Best Experience I’ve Had”</h6>
-              <p class="card-text text-muted mb-0">
+              <h6 class="fw-bold mb-2 text-dark">“Changed My Career Path”</h6>
+              <p class="card-text text-muted mb-0" style="line-height: 1.6;">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida ac nulla fermentum odio in nunc,
-                aenean. –– Your name
+                aenean --Your Name</span>
               </p>
             </div>
           </div>
         </div>
+
       </div>
     </div>
+
   </section>
 
   <!-- Beyound SECTION -->
@@ -365,19 +383,20 @@
               style="width: 60px; height: 60px; border: 3px solid #28a745; position: absolute; top: -33px; left: 20px; object-fit: cover; object-position: center;">
 
             <!-- Card 1: Sales Earning -->
-            <div class="sales-card p-3 bg-white rounded shadow-sm mt-4">
+            <div class="sales-card p-3 bg-white rounded shadow-sm mt-4" style="position: relative; z-index: 1;">
               <h6 class="fw-bold mb-2" style="color: #0B1F3A; font-size: 1.1rem;">Sales Earning</h6>
               <p class="text-success fw-bold mb-2" style="font-size: 1.2rem;">↑ 48%</p>
               <div class="d-flex align-items-end" style="height: 80px; gap: 5px;">
-                <div class="bar bg-success rounded" style="height: 30px; width: 15px; transition: height 0.3s;"></div>
-                <div class="bar bg-success rounded" style="height: 50px; width: 15px; transition: height 0.3s;"></div>
-                <div class="bar bg-success rounded" style="height: 70px; width: 15px; transition: height 0.3s;"></div>
-                <div class="bar bg-success rounded" style="height: 40px; width: 15px; transition: height 0.3s;"></div>
+                <div class="bar bg-success rounded" style="height: 30px; width: 15px;"></div>
+                <div class="bar bg-success rounded" style="height: 50px; width: 15px;"></div>
+                <div class="bar bg-success rounded" style="height: 70px; width: 15px;"></div>
+                <div class="bar bg-success rounded" style="height: 40px; width: 15px;"></div>
               </div>
             </div>
 
-            <!-- Card 2: Product Sales -->
-            <div class="product-card p-3 bg-white rounded shadow-sm mt-3">
+            <!-- Card 2: Product Sales (Touching bottom-right of Card 1) -->
+            <div class="product-card p-3 bg-white rounded shadow-sm"
+              style="position: absolute; bottom: -65px; right: 15px; width: 250px; height: 200px; z-index: 2; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
               <h6 class="fw-bold mb-2" style="color: #0B1F3A; font-size: 1.1rem;">Product Sales</h6>
               <p class="text-success fw-bold mb-2" style="font-size: 1.2rem;">↑ 63%</p>
               <div class="mt-2">
@@ -389,11 +408,13 @@
             </div>
 
             <!-- Additional Floating Avatars -->
-            <img src="images/cards/card2.png" class="avatar avatar-2 rounded-circle" alt="Team Member 2"
+            <!-- <img src="images/cards/card2.png" class="avatar avatar-2 rounded-circle" alt="Team Member 2"
               style="width: 50px; height: 50px; border: 3px solid #28a745; position: absolute; right: 10px; bottom: 10px; object-fit: cover; object-position: center;">
             <img src="images/cards/card3.png" class="avatar avatar-3 rounded-circle" alt="Team Member 3"
-              style="width: 50px; height: 50px; border: 3px solid #28a745; position: absolute; right: 60px; bottom: 60px; object-fit: cover; object-position: center;">
+              style="width: 50px; height: 50px; border: 3px solid #28a745; position: absolute; right: 60px; bottom: 60px; object-fit: cover; object-position: center;"> -->
+
           </div>
+
         </div>
 
         <!-- Right Text -->

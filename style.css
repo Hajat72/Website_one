@@ -40,10 +40,10 @@ body {
 }
 
 /* end hey maat  */
+
 /* btns css  */
 .btn-primary {
   background-color: #27AE60;
-  /* Main brand color */
   border-color: #00B894;
   color: #fff;
   transition: all 0.3s ease;
@@ -438,12 +438,15 @@ body {
 /* Contact Us CSS */
 .form-control,
 .input-group-text {
-  border-radius: 0; /* Reset default to allow custom rounding */
+  border-radius: 0;
+  /* Reset default to allow custom rounding */
 }
+
 .input-group .form-control {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
+
 .input-group .input-group-text {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -451,12 +454,15 @@ body {
 
 /* Apply custom rounding with Bootstrap classes */
 .rounded-2 {
-  border-radius: 0.375rem !important; /* Override if needed */
+  border-radius: 0.375rem !important;
+  /* Override if needed */
 }
+
 .rounded-start-2 {
   border-top-left-radius: 0.375rem !important;
   border-bottom-left-radius: 0.375rem !important;
 }
+
 .rounded-end-2 {
   border-top-right-radius: 0.375rem !important;
   border-bottom-right-radius: 0.375rem !important;
@@ -473,4 +479,18 @@ body {
   background-color: #1a7b33;
   transform: scale(1.05);
 }
+/* Here’s What A Few Of The Mastermind
+Members Had To Say */
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
 
+.testimonial-card:hover img {
+  transform: scale(1.05);
+  filter: grayscale(0%);
+}
+
+.testimonial-card img.grayscale {
+  filter: grayscale(100%);
+}
