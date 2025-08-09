@@ -5,6 +5,12 @@ body {
   overflow-x: hidden;
 }
 
+/* Hero Section media queary  */
+@media (min-width: 545px) and (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
 .section {
   padding: 60px 0;
 }
