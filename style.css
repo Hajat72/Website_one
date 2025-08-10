@@ -18,7 +18,6 @@ body {
 /* Navbar CSS */
 .custom-navbar {
   background-color: #0B1F3A;
-  /* Deep Navy */
 }
 
 .custom-navbar .nav-link:hover {
@@ -57,7 +56,6 @@ body {
 
 .btn-primary:hover {
   background-color: #27AE60;
-  /* Slightly darker on hover */
   border-color: #009f7a;
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(0, 184, 148, 0.4);
@@ -98,8 +96,8 @@ body {
 }
 
 /* end  */
+
 /* Agenda css  */
-/* Section background */
 .section.bg-white {
   background: linear-gradient(135deg, #ffffff, #f8fafc);
 }
@@ -125,7 +123,6 @@ body {
 /* Icon color */
 .section i {
   color: #0d6efd !important;
-  /* Matches primary theme */
 }
 
 /* List styling */
@@ -152,7 +149,6 @@ body {
 /* end  */
 
 /* who is mastermind  */
-/* Section background */
 .section {
   background: linear-gradient(135deg, #ffffff, #f8fafc);
 }
@@ -206,8 +202,8 @@ body {
 }
 
 /* end  */
+
 /* Vision  */
-/* Section background */
 .section {
   background: linear-gradient(135deg, #ffffff, #f9fafb);
 }
@@ -365,6 +361,7 @@ body {
 }
 
 /* end  */
+
 /* Apply  */
 .green-checklist {
   list-style: none;
@@ -399,6 +396,7 @@ body {
 }
 
 /* end  */
+
 /* Host  */
 .host-img {
   width: 150px;
@@ -406,7 +404,6 @@ body {
   object-fit: cover;
   border-radius: 50%;
   border: 4px solid #f5c542;
-  /* Golden ring */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -416,13 +413,13 @@ body {
 }
 
 /* end  */
+
 /* footer  */
 .footer {
   background-color: #111;
   /* Deep dark */
   color: #fff;
   border-top: 2px solid #f5c542;
-  /* Gold accent */
 }
 
 .footer h3 {
@@ -441,11 +438,11 @@ body {
 }
 
 /* end  */
+
 /* Contact Us CSS */
 .form-control,
 .input-group-text {
   border-radius: 0;
-  /* Reset default to allow custom rounding */
 }
 
 .input-group .form-control {
@@ -461,7 +458,6 @@ body {
 /* Apply custom rounding with Bootstrap classes */
 .rounded-2 {
   border-radius: 0.375rem !important;
-  /* Override if needed */
 }
 
 .rounded-start-2 {
